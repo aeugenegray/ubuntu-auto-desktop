@@ -1,1 +1,9 @@
-# ubuntu-x64-auto-setup-alpha
+# Ubuntu Server LXDE Desktop Auto Setup
+### includes auto installs of
+
+Actionaz
+Terminator
+Opera
+Google Drive Ocamlfuse
+Sublime Text Editor
+
