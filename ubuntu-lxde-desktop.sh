@@ -5,13 +5,14 @@ echo 'deb http://deb.opera.com/opera/ stable non-free' > /etc/apt/sources.list.d
 sudo add-apt-repository ppa:alessandro-strada/ppa
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+wget https://repo.vivaldi.com/stable/linux_signing_key.pub
+gpg --import linux_signing_key.pub
+dpkg-sig --verify vivaldi-stable_1.14.1077.55-1_amd64.deb
 sudo apt-get update
-sudo apt-get install -y opera qupzilla midori google-drive-ocamlfuse sublime-text
+sudo apt-get install -y opera qupzilla midori google-drive-ocamlfuse sublime-text terminator
 vncserver
-steelers
-steelers
+larrythelegend
+larrythelegend
 sudo apt-get remove -y tightvncserver
 sudo apt-get install -y vnc4server
-wget https://downloads.vivaldi.com/stable/vivaldi-stable_1.15.1147.52-1_amd64.deb
-sudo dpkg -i vivaldi*
 
